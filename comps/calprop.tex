@@ -1,0 +1,82 @@
+In this work, the calculations of properties are carried out by LAMMPS \cite{plimpton_fast_1995}.
+Since the investigated objects are water-alcohol mixtures, the fundamental inputs include\\
+- Number of alcohol molecules\\
+- Number of water molecules\\
+- Declaring implemented alcohol molecular model\\
+- System temperature T\\
+- System volume V\\
+- System pressure P\\
+TIP4P/Ice \cite{abascal_potential_2005} will be used as the water model throughout all 
+mixtures while all alcohol models are based on OPLS-AA \cite{jorgensen_development_1996}, 
+which is derived from the Optimized Potentials for Liquid Simulations models 
+\cite{jorgensen_opls_1988}.The system pressure is set at 1 atm while the volume of the 
+system is set at 40x40x40 $\textup{\AA}^3$ throughout all simulations.\\
+Since we are investigating throughout the mass concentration of mixtures, 
+we construct a small converter that approximate the number of alcohol 
+molecules and water molecules from input mass concentrations. Assuming 
+that the sum of volume of water and volume of alcohol equals the system 
+volume, we obtain the following:
+\begin{equation}
+    m_{w}=\rho_{w} V_{w}
+\end{equation}
+\begin{equation}
+    m_{w}=\rho_{w}\left(V-V_{a l c}\right)
+\end{equation}
+\begin{equation}
+    m_{w}=\rho_{w}\left(V-m_{a l c} / \rho_{a l c}\right) \label{eq:1}
+\end{equation}
+Where $m_w$ is mass of water, $\rho_w$ is density of water, $V_w$ is volume 
+of water, $m_{alc}$ is mass of alcohol, $\rho_{alc}$ is density of alcohol and
+$V_{alc}$ is volume of alcohol.\\
+But then the mass concentration is:
+\begin{equation}
+    c_{\%}=\frac{m_{alc}}{m_{a k}+m_{alc}}
+\end{equation}
+Thus
+\begin{equation}
+    m_{alc}=\frac{c_{\%}}{1-c_{\%}}m_w  \label{eq:2}
+\end{equation}
+Substitute \ref{eq:2} into \ref{eq:1} we obtain
+\begin{equation}
+    m_{w}=\rho_{w}\left(V-\frac{c_{\%}}{1-c_{\%}} m_{w} / \rho_{a l c}\right)
+\end{equation}
+Collect all the terms that contain $m_w$ into one side then eliminate the coefficients, we obtain:
+\begin{equation}
+    m_{w}=V \rho_{a l c} \rho_{w}\left(1-c_{\%}\right) /\left(\rho_{w} c_{\%}+\left(1-c_{\%}\right) \rho_{a l c}\right)
+\end{equation}
+\begin{equation}
+    m_{a l c}=\frac{1-c_{\%}}{c_{\%}} m_{w}
+\end{equation}
+Thus, the number of alcohol molecules $N_{alc}$ and the number of water molecules $N_w$
+can be obtained as follows:
+\begin{equation}
+    N_{a l c}=N_{A} \frac{m_{a l c}}{M_{a l c}}
+\end{equation}
+\begin{equation}
+    N_{w}=N_{A} \frac{m_{w}}{M_{w}}
+\end{equation}
+Furthermore, $N_A$ is the Avogadro number, $M_{alc}$ is the molar mass of alcohol and 
+$M_w$ is the molar mass of water.
+
+The method is validated by taking the calculated number of molecules to 
+calculate the mass concentration. The error between calculated mass 
+concentrations and input concentrations do not surpass 2\%. Thus, the method 
+is valid. The error arises from the fact that an integer number of molecules 
+is required.\\
+The densities of pure liquid are taken from online chemistry database CHERIC 
+(Chemical Engineering and Materials Research Information Center) under 
+conditions of 1 atm and 293K. Thus, the temperature of systems are set at 
+293K and 1 atm pressure.\\
+The thermal conductivity can be deconstructed into 2 terms: virial and 
+convective. The virial terms represents the interatomic interaction 
+contribution to the thermal conductivity while the convective terms show the 
+diffusion in the thermal conductivity. It is shown that the virial terms 
+dominate the convective terms and can be used to represent the trend of 
+values \cite{lin_constructing_2011}. Furthermore, in LAMMPS, the calculation time of 
+the virial terms is much shorter compared to the total thermal conductivity 
+due to the absence of the enthalpy quantity that is required to calculate the 
+total term. Since the main aim of this work is the trend of values instead of 
+the absolute values themselves, to reduce calculation costs, only the virial 
+term is calculated. However, we can still calculate the total terms for 
+viscosity since we do not need enthalpy quantity for viscosity calculations.
+

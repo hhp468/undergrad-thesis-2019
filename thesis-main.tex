@@ -1,0 +1,57 @@
+\documentclass[12pt]{report}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+\usepackage{subcaption} %multiple fig
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{parskip} %package for chaning to new paragraph
+\usepackage{sectsty} %for font
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{makecell}
+\usepackage{apacite}
+%\usepackage{pgfplotstable}
+\usepackage{inputenc}
+\newcommand{\angstrom}{\textup{\AA}}
+\numberwithin{equation}{section}
+
+\chapterfont{\centering \LARGE}
+
+\graphicspath{}
+\renewcommand{\baselinestretch}{2.0}
+
+\begin{document}
+
+\input{comps/titlepage.tex} %Title page
+\newpage
+\addcontentsline{toc}{chapter}{Acknowledgement}
+\chapter*{Acknowledgements}
+\input{comps/ack.tex} %Acknowledgement
+\newpage
+\tableofcontents
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+
+\newpage
+\chapter*{Abstract}
+\input{comps/abs.tex} %Abstract
+
+\chapter{Introduction} %Introduction
+\input{comps/intro.tex} %Input intro.tex
+\newpage
+\chapter{Theoretical Background} %Chapter 2 Title - alcohol analytic compare with literature, finding variables
+\input{comps/chap2-theory.tex} %Input chap2.tex
+\chapter{Method} %Chapter 3 Title - method, writing specifically about Green Kubo formulation, then say lammps, xgb, opt
+\input{comps/chap3-method.tex} %Input chap3.tex
+\chapter{Results and Discussions} %Chapter 4 Title
+% Need a chapter for results and results discussion
+\input{comps/chap4-resultanddiscuss.tex} %Input chap4.tex
+\chapter{Conclusion} %Chapter 5 Title
+\input{comps/chap5-conclusion.tex} %Input chap5.tex
+
+%\appendix
+%\addcontentsline{toc}{chapter}{Appendices}
+%\chapter*{Appendix A: Data Table}
+%\input{comps/app.tex}
+\bibliographystyle{apacite}
+\bibliography{mybib}
+\end{document}

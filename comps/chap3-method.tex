@@ -1,0 +1,97 @@
+In this work, we will investigate alcohol-water mixtures of 8 different 
+alcohols with the solution concentrations varying from 2\% to 50\% for each.
+The investigated alcohols include:\\
+- ethylene glycol\\
+- ethanol\\
+- methanol\\
+- glycerol\\ 
+- 1-propanol\\
+- 2-propanol\\ 
+- 1,3-propanediol\\
+- propylene glycol\\
+as they are alcohol types that were used as industrial antifreeze.
+The methodology is operated according to the following diagram
+\begin{figure}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{method.png}
+    \end{center}
+    \caption{Procedure of the Methodology}
+\end{figure}
+\section{Calculating Properties}
+\input{comps/calprop.tex}
+\section{Analyzing Antifreeze Molecules}
+\input{comps/analyze.tex}
+\section{Machine Learning Implementation}
+Two sets of data will be prepared: a training data set and a testing data set. 
+The training data set is used to construct the model while the testing data 
+set is left unused throughout the training process and only used in 
+approximating the true error so that the model is not overfit. We will make 
+a model of thermal conductivity and a model of viscosity.
+
+The parameter set for each model are decided by using k-fold methods. 
+Within the possible range of parameters, every combination of parameters 
+is cross-validated using the k-fold methodology and then the training 
+performance scores are compared. The parameter set of the model that has 
+the best training performance score will be chosen.
+The selected parameter sets will be used to create the models with the 
+training data set. The constructed models will then be tested on the 
+testing data set to obtain the performance score. 
+
+To thoroughly analyze the machine learning implementation, the training 
+data set and testing data set will be decided by 2 ways: 
+random and out of sample.
+The random method is to randomly divided the entire data set into the 
+training data set and the testing data set and create the models. 
+The resulting models will be used to progress to the final step.
+The out of sample method is to completely exclude an alcohol type out of 
+the training sample. Four alcohol types, namely propylene glycol, methanol. 
+2-propanol and glycerol, will be in turn excluded to assess the 
+characteristics of machine learning approach in this problem.
+
+The performance score of the testing and training processes will be 
+calculated using the $R^2$ score method as follows:
+\begin{equation}
+    R^{2}=1-\frac{S S R}{T S S}
+\end{equation}
+Where
+\begin{equation}
+    S S R=\sum_{i=1}^{n}\left(y_{i}-f\left(x_{i}\right)\right)^{2}
+\end{equation}
+\begin{equation}
+    T S S=\sum_{i=1}^{n}\left(y_{i}-\frac{1}{n} \sum_{j=1}^{n} y_{j}\right)^{2}
+\end{equation}
+Furthermore, SSR stands for squared sum of residual, TSS stands for total squared sum, 
+y is the real value, $f(x_i)$ is the predicted value, n is the number of data in 
+the data sample and i and j are data indices.
+\section{Optimization}
+In the optimization step, I will find the optimal values of desired properties 
+while returning the corresponding inputs, which is the structural features in 
+this work. The finding is done by setting up an optimization problem with an 
+objective function and different constraints. The objective function guides 
+the computer to find the optimal results while the constraints help us to 
+remove the unrealistic outcomes.\\
+This work considers optimization of thermal conductivity and viscosity. 
+Thus, the problem will be described as follows:\\
+Maximize:
+\begin{equation}
+    \alpha \frac{T C-\overline{T C}}{\sigma_{T C}}-\beta \frac{V i s c-\overline{V i s c}}{\sigma_{V i s c}}
+    \label{eq:obj} 
+\end{equation}
+Subject to:\\
+- The number of alcohol molecules $>$ 0\\
+- The number of carbons and oxygens $>$ 0\\
+- The position of OH groups $>$ 0\\
+- The length of the main carbon chain $<$ the number of carbons\\
+- The number of total molecules $<$ 2100 (estimated number that fits in the investigated volume)\\
+- Every input is integer\\
+Where $\alpha$ and $\beta$ are the weighting factors that define the importance of the 
+thermal conductivity and viscosity. In this research, we value the thermal 
+conductivity and the viscosity equally, which means $\alpha=\beta=1$. $\sigma_{T C}$ is the standard 
+deviation of the sample thermal conductivity values, $\sigma_{Visc}$ is the standard 
+deviation of the sample viscosity values, $\overline{T C}$ is the mean of the sample 
+thermal conductivity values and $\overline{V i s c}$ is the mean of the sample viscosity 
+values. The values of thermal conductivity and viscosity will be first 
+standardized before processed in the objective function \ref{eq:obj}.
+
+
+

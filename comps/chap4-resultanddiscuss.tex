@@ -1,0 +1,76 @@
+\section{Simulation Results}
+The calculated properties from Molecular Dynamics simulations are presented 
+in the following forms
+\begin{figure}[h!]
+    \includegraphics[width=1\textwidth]{tc.png}
+    \centering
+    \captionsetup{justification=centering}
+    \caption{Thermal Conductivity Values of 8 Sample Alcohol Types Across Mass Concentration}
+\end{figure}
+
+As expected in the thermal conductivity graph, all the thermal conductivity 
+lines decreased due to the fact that all types of alcohol are less efficient 
+than water in terms of heat transfer. Even though having a decreasing trend, 
+the gradient of the thermal conductivity line of glycerol was quite different 
+compared to others. Due to the absence of enthalpy quantity, all values 
+converge to approximately 0.85 [W/m.K], which is expected.
+\begin{figure}[h]
+    \includegraphics[width=1\textwidth]{visc.png}
+    \centering
+    \captionsetup{justification=centering}
+    \caption{Viscosity Values of 8 Sample Alcohol Types Across Mass Concentration}
+\end{figure}
+
+In the viscosity graph, while all values converged to the value of pure water, 
+which is expected, the viscosity line of methanol also decreased as methanol 
+is less viscous than water.
+\section{Model Result Analysis}
+\input{comps/modelanalysis.tex}
+\section{Optimization Results}
+Using the formulation \ref{eq:obj} and the related constraints, the results for 
+optimization showed that the alcohol types with the following estimated 
+structural features will have the optimal performance on both thermal 
+conductivity and viscosity:
+\begin{table}[ht]
+    \centering
+    \caption{Predicted Structural Features From Optimization}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \hline
+        \hline
+        \thead{Ratio of Molecules \\ (alcohol/water)} & \thead{Number of \\carbon} & \thead{Number of \\oxygen}
+        & \thead{Number of \\single bond} & \thead{Length of \\(main) \\ (carbon chain)} & \thead{Position of \\hydroxyl \\groups}\\
+        \hline
+        0.0005-0.0148  & 3-4 & 3 & 13,17 & 3 & 1, 2, 3\\
+        \hline
+    \end{tabular}
+    \label{table:opt}
+\end{table}
+\begin{table}[ht]
+    \centering
+    \caption{Predicted Thermophysical Properties From Optimization}
+    \begin{tabular}{|c|c|}
+        \hline
+        \hline
+        \thead{Predicted Thermal Conductivity\\ (W/m.K)}& \thead{Predicted Viscosity \\(mPa.s)}\\
+        \hline
+         0.81219405 & 2.0989997\\
+        \hline
+    \end{tabular}
+    \label{table:prop}
+\end{table}
+
+As we can see, the best mixture is almost water, as water so far has the best 
+thermal conductivity and viscosity. Furthermore, one of the molecular 
+structures that can be constructed from these predicted features is glycerol, 
+which is the type of alcohol that has the highest thermal conductivity and 
+quite good viscosity across mass concentrations of alcohol-water mixtures 
+according to the simulated data. This is showing that the methodology is 
+approaching on the right direction. In the future work, with the additional 
+constraint of freezing point, the method will be able to produce the desired 
+outcome. Even though we obtained the features, the lack of diversity in terms 
+of molecular structure from the sample data prevents us from constructing a 
+complete structure. Thus, in the future where this method is applied, the 
+sample data need to be sufficiently diverse enough as discussed in the 
+previous sub-section. At the same time, an interpreting method should also be 
+developed to translate from the broken down molecular structural features to 
+a complete structure.

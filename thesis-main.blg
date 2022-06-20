@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: thesis-main.aux
+The style file: apacite.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: mybib.bib
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--No journal in sasaki_truth_2007
+You've used 16 entries,
+            6951 wiz_defined-function locations,
+            1385 strings with 14149 characters,
+and the built_in function-call counts, 34220 in all, are:
+= -- 4277
+> -- 257
+< -- 1757
++ -- 1797
+- -- 32
+* -- 2237
+:= -- 6527
+add.period$ -- 71
+call.type$ -- 16
+change.case$ -- 299
+chr.to.int$ -- 0
+cite$ -- 33
+duplicate$ -- 808
+empty$ -- 1245
+format.name$ -- 410
+if$ -- 6357
+int.to.chr$ -- 0
+int.to.str$ -- 48
+missing$ -- 0
+newline$ -- 409
+num.names$ -- 128
+pop$ -- 509
+preamble$ -- 1
+purify$ -- 88
+quote$ -- 0
+skip$ -- 2177
+stack$ -- 0
+substring$ -- 1952
+swap$ -- 501
+text.length$ -- 70
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 1536
+warning$ -- 1
+while$ -- 166
+width$ -- 0
+write$ -- 510
+(There was 1 warning)

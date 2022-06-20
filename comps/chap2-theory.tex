@@ -1,0 +1,88 @@
+To be able to understand the method, we will introduce a few theoretical 
+backgrounds that are related to the tools I will use in this research.
+\section{Molecular Dynamics Simulation}
+\input{comps/mdtheory.tex}
+\section{Green-Kubo Relation}
+Green-Kubo relation is a formula that shows the relationship between the 
+transport coefficient and the dynamical variables. 
+The general expression is as follows \cite{hansen_theory_2013}
+\begin{equation}
+    K=C \int_{0}^{\infty}\langle D(t) D(0)\rangle \mathrm{d} t
+\end{equation}
+Where K is the transport coefficient, 
+D is dynamical variable terms 
+and C is the function constant. To be able to calculate viscosity and 
+thermal conductivity values, the Green-Kubo expression will be transformed, 
+without detailed derivation delivered, and presented as follows
+\subsection{Viscosity}
+The Green-Kubo expression for calculating viscosity is as follows:
+\begin{equation}
+    \eta=\frac{V}{k_{b} T} \int_{0}^{\infty}\left\langle P_{\alpha \beta}(t) \cdot P_{\alpha \beta}(0)\right\rangle d t
+\end{equation}
+Where $P$ is stress tensor terms, 
+$\alpha,  \beta \in (x, y, z)$ is the 3D direction, 
+V is the system volume, 
+T is the system temperature, 
+$k_B=1.38 \times 10^{-23}$ $[m^2\cdot kg\cdot s^{-2}\cdot K^{-1}]$ is the Boltzmann constant 
+and $\langle \rangle$ is the ensemble average \cite{hansen_theory_2013}.\\
+Furthermore, the stress tensor terms can also be expressed as follows:
+\begin{equation}
+    P_{\alpha \beta}=\frac{1}{V}\left(\sum_{i} m_{i} v_{i_{\alpha}} v_{i_{\beta}}+\sum_{i} r_{i_{\alpha}} f_{i_{\beta}}\right)
+\end{equation}
+Where $m$ is the atom mass, $v$ is the atom velocity, $r$ is the atom position, 
+$f$ is the forces act on atom and $i$ is the atom index \cite{allen_time_2017}.
+\subsection{Thermal Conductivity}
+The Green-Kubo expression for calculating thermal conductivity is as follows:
+\begin{equation}
+    \lambda_{T}=\frac{V}{k_{\mathrm{B}} T^{2}} \int_{0}^{\infty} \mathrm{d} t\left\langle J_{\alpha}(t) J_{\alpha}(0)\right\rangle
+\end{equation}
+Additionally, J is heat flux terms, 
+V is the system volume, 
+T is the system temperature, 
+$k_B=1.38 \times 10^{-23}$ $[m^2\cdot kg\cdot s^{-2}\cdot K^{-1}]$ is the Boltzmann constant, 
+$\langle \rangle$ is the ensemble average and
+$\alpha \in (x, y, z)$ is the 3D direction \cite{hansen_theory_2013}.\\
+Furthermore, The heat flux terms can be broken down further. Thus,
+\begin{equation}
+    J_{\alpha}=\frac{1}{V}\left(\sum_{i} e_{i} v_{i}+\sum_{i<j}\left(f_{i j} \cdot v_{j}\right) r_{i j_{\alpha}}\right)
+\end{equation}
+Where $e$ is energy per-atom, 
+$v$ is the velocity of atoms, 
+$f$ is the force between atoms, 
+$r$ is the distance between atoms in the $\alpha$ direction and 
+$i$ and $j$ are the atom indices \cite{manjunatha_development_2018}.
+\section{eXtreme Gradient Boosting Method}
+\input{comps/xgboost.tex}
+\section{Cross Validation}
+Every predictive model for a purpose comes along with a prediction error 
+(true error), which show how different the outputs of the model compared 
+to the true values of the corresponding inputs. Cross validation is a method 
+that estimates the true error of a predictive model. For sample data, which 
+includes both input and true values of output, the estimation of error is a 
+simple job. However, for real data, the true error is usually unable to be 
+found due to the absence of the true values of output. Thus, cross validation 
+is implemented to approximate the true error from existing data sets 
+\cite{rodriguez_sensitivity_2010}.
+\subsection*{k-folds method}
+The k-folds method is a cross validation method that’s popularly used in 
+machine learning because of its good performance. In the k-fold method, 
+the sample data set of n data points is divided into k equal $\frac{n}{k}$ data point 
+portions with no shared component. The ith portion will be used to test the 
+model (validation set) and give a numerical test error while the other k-1 
+portions will be used to train the model (training set). The process iterates 
+k times so that every portion would be selected as test set once. The true 
+error of the model will be estimated by averaging k numerical values of test 
+error. The error measuring error for numerical output problem can be mean 
+square error method as follows:
+\begin{equation}
+    M S E=(y-\hat{y})^{2}
+\end{equation}
+Where $y$ is the real value and $\hat{y}$ is the predicted value. Thus, the 
+true error estimation becomes
+\begin{equation}
+    True Error Estimation=\frac{1}{k} \sum_{i=1}^{k} \sum_{j=1}^{n_i}\left(y_{j}-\hat{y}_{j}\right)_{i}^{2}
+\end{equation}
+Where i is the index of divided portions, j is the index of data points and 
+$n_i$ is the data in the $i^{th}$ portion. The k-folds method helps us to 
+reduce the variance of models’ training scores, which due to the splitting of 
+validation set and training set, and estimate the most stable performance scores.

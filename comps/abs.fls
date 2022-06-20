@@ -1,0 +1,12 @@
+PWD /hdd/thesis/chapters
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT /home/hhp468/Desktop/hdd/thesis/chapters/abs.tex
+OUTPUT /home/hhp468/Desktop/hdd/thesis/chapters/abs.log
+INPUT /home/hhp468/Desktop/hdd/thesis/chapters/abs.aux
+INPUT /home/hhp468/Desktop/hdd/thesis/chapters/abs.aux
+OUTPUT /home/hhp468/Desktop/hdd/thesis/chapters/abs.aux
+OUTPUT /home/hhp468/Desktop/hdd/thesis/chapters/abs.pdf
+INPUT /home/hhp468/Desktop/hdd/thesis/chapters/abs.aux

@@ -1,0 +1,459 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Abascal%
+, Sanz%
+, García~Fernández%
+\BCBL {}\ \BBA {} Vega%
+}{%
+Abascal%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2005}}%
+}]{%
+abascal_potential_2005}
+\APACinsertmetastar {%
+abascal_potential_2005}%
+\begin{APACrefauthors}%
+Abascal, J\BPBI L\BPBI F.%
+, Sanz, E.%
+, García~Fernández, R.%
+\BCBL {}\ \BBA {} Vega, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{{\APACmonth{06}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A potential model for the study of ices and amorphous
+  water: {TIP}4P/{Ice}} {A potential model for the study of ices and amorphous
+  water: {TIP}4p/{Ice}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Journal of Chemical Physics}{122}{23}{234511}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Allen%
+\ \BBA {} Tildesley%
+}{%
+Allen%
+\ \BBA {} Tildesley%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+allen_time_2017}
+\APACinsertmetastar {%
+allen_time_2017}%
+\begin{APACrefauthors}%
+Allen, M\BPBI P.%
+\BCBT {}\ \BBA {} Tildesley, D\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{{\APACmonth{11}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Time correlation functions and transport coefficients}
+  {Time correlation functions and transport coefficients}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Computer {Simulation} of {Liquids}} {Computer
+  {Simulation} of {Liquids}}\ (\BVOL~1, \BPG~74).
+\newblock
+\APACaddressPublisher{}{Oxford University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Chen%
+\ \BBA {} Guestrin%
+}{%
+Chen%
+\ \BBA {} Guestrin%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+chen_xgboost:_2016}
+\APACinsertmetastar {%
+chen_xgboost:_2016}%
+\begin{APACrefauthors}%
+Chen, T.%
+\BCBT {}\ \BBA {} Guestrin, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{XGBoost}: {A} {Scalable} {Tree} {Boosting} {System}}
+  {{XGBoost}: {A} {Scalable} {Tree} {Boosting} {System}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings of the 22nd ACM SIGKDD International
+  Conference on Knowledge Discovery and Data Mining - KDD '16}{}{}{785--794}.
+\newblock
+\APACrefnote{arXiv: 1603.02754}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hansen%
+\ \BBA {} McDonald%
+}{%
+Hansen%
+\ \BBA {} McDonald%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+hansen_theory_2013}
+\APACinsertmetastar {%
+hansen_theory_2013}%
+\begin{APACrefauthors}%
+Hansen, J\BHBI P.%
+\BCBT {}\ \BBA {} McDonald, I\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2013}.
+\newblock
+\APACrefbtitle {Theory of simple liquids: with applications of soft matter}
+  {Theory of simple liquids: with applications of soft matter}\
+  (\PrintOrdinal{Fourth edition}\ \BEd).
+\newblock
+\APACaddressPublisher{Amstersdam}{Elsevier/AP}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hoerl%
+\ \BBA {} Kennard%
+}{%
+Hoerl%
+\ \BBA {} Kennard%
+}{%
+{\protect \APACyear {1970}}%
+}]{%
+hoerl_ridge_1970}
+\APACinsertmetastar {%
+hoerl_ridge_1970}%
+\begin{APACrefauthors}%
+Hoerl, A\BPBI E.%
+\BCBT {}\ \BBA {} Kennard, R\BPBI W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1970}{{\APACmonth{02}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Ridge {Regression}: {Biased} {Estimation} for
+  {Nonorthogonal} {Problems}} {Ridge {Regression}: {Biased} {Estimation} for
+  {Nonorthogonal} {Problems}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Technometrics}{12}{1}{55--67}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+James%
+, Witten%
+, Hastie%
+\BCBL {}\ \BBA {} Tibshirani%
+}{%
+James%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+james_introduction_2013}
+\APACinsertmetastar {%
+james_introduction_2013}%
+\begin{APACrefauthors}%
+James, G.%
+, Witten, D.%
+, Hastie, T.%
+\BCBL {}\ \BBA {} Tibshirani, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2013}.
+\newblock
+\APACrefbtitle {An {Introduction} to {Statistical} {Learning}} {An
+  {Introduction} to {Statistical} {Learning}}\ (\BVOL~103).
+\newblock
+\APACaddressPublisher{New York, NY}{Springer New York}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jorgensen%
+, Maxwell%
+\BCBL {}\ \BBA {} Tirado-Rives%
+}{%
+Jorgensen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1996}}%
+}]{%
+jorgensen_development_1996}
+\APACinsertmetastar {%
+jorgensen_development_1996}%
+\begin{APACrefauthors}%
+Jorgensen, W\BPBI L.%
+, Maxwell, D\BPBI S.%
+\BCBL {}\ \BBA {} Tirado-Rives, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1996}{{\APACmonth{11}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Development and {Testing} of the {OPLS} {All}-{Atom}
+  {Force} {Field} on {Conformational} {Energetics} and {Properties} of
+  {Organic} {Liquids}} {Development and {Testing} of the {OPLS} {All}-{Atom}
+  {Force} {Field} on {Conformational} {Energetics} and {Properties} of
+  {Organic} {Liquids}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of the American Chemical
+  Society}{118}{45}{11225--11236}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jorgensen%
+\ \BBA {} Tirado-Rives%
+}{%
+Jorgensen%
+\ \BBA {} Tirado-Rives%
+}{%
+{\protect \APACyear {1988}}%
+}]{%
+jorgensen_opls_1988}
+\APACinsertmetastar {%
+jorgensen_opls_1988}%
+\begin{APACrefauthors}%
+Jorgensen, W\BPBI L.%
+\BCBT {}\ \BBA {} Tirado-Rives, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1988}{{\APACmonth{03}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The {OPLS} [optimized potentials for liquid simulations]
+  potential functions for proteins, energy minimizations for crystals of cyclic
+  peptides and crambin} {The {OPLS} [optimized potentials for liquid
+  simulations] potential functions for proteins, energy minimizations for
+  crystals of cyclic peptides and crambin}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of the American Chemical
+  Society}{110}{6}{1657--1666}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lin%
+, Hsiao%
+\BCBL {}\ \BBA {} Chieng%
+}{%
+Lin%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+lin_constructing_2011}
+\APACinsertmetastar {%
+lin_constructing_2011}%
+\begin{APACrefauthors}%
+Lin, Y\BHBI S.%
+, Hsiao, P\BHBI Y.%
+\BCBL {}\ \BBA {} Chieng, C\BHBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{{\APACmonth{04}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Constructing a force interaction model for thermal
+  conductivity computation using molecular dynamics simulation: {Ethylene}
+  glycol as an example} {Constructing a force interaction model for thermal
+  conductivity computation using molecular dynamics simulation: {Ethylene}
+  glycol as an example}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Journal of Chemical Physics}{134}{15}{154509}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Manjunatha%
+}{%
+Manjunatha%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+manjunatha_development_2018}
+\APACinsertmetastar {%
+manjunatha_development_2018}%
+\begin{APACrefauthors}%
+Manjunatha, L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2018}.
+\unskip\
+\newblock
+\APACrefbtitle {Development of a {Molecular}-scale {Technique} to {Understand}
+  the {Mechanisms} of {Transport} {Proerties} of {Small} {Alcohols}}
+  {Development of a {Molecular}-scale {Technique} to {Understand} the
+  {Mechanisms} of {Transport} {Proerties} of {Small} {Alcohols}}\
+  \APACtypeAddressSchool {{Bachelor} dissertation}{}{}.
+\unskip\
+\newblock
+\APACaddressSchool {Japan}{Kyushu University}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Manjunatha%
+, Takamatsu%
+\BCBL {}\ \BBA {} Cannon%
+}{%
+Manjunatha%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+manjunatha_investigation_2017}
+\APACinsertmetastar {%
+manjunatha_investigation_2017}%
+\begin{APACrefauthors}%
+Manjunatha, L.%
+, Takamatsu, H.%
+\BCBL {}\ \BBA {} Cannon, J\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{{\APACmonth{11}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Investigation into influence of hydroxyl group placement
+  on the thermal conductivity of propane-base alcohols using molecular dynamics
+  simulation} {Investigation into influence of hydroxyl group placement on the
+  thermal conductivity of propane-base alcohols using molecular dynamics
+  simulation}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Investigation into influence of hydroxyl group placement
+  on the thermal conductivity of propane-base alcohols using molecular dynamics
+  simulation.} {Investigation into influence of hydroxyl group placement on the
+  thermal conductivity of propane-base alcohols using molecular dynamics
+  simulation.}
+\newblock
+\APACaddressPublisher{Hiroshima, Japan}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mohapatra%
+\ \BBA {} Loikits%
+}{%
+Mohapatra%
+\ \BBA {} Loikits%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+mohapatra_advances_2005}
+\APACinsertmetastar {%
+mohapatra_advances_2005}%
+\begin{APACrefauthors}%
+Mohapatra, S\BPBI C.%
+\BCBT {}\ \BBA {} Loikits, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{{\APACmonth{03}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Advances in liquid coolant technologies for electronics
+  cooling} {Advances in liquid coolant technologies for electronics
+  cooling}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Semiconductor {Thermal} {Measurement} and {Management}
+  {IEEE} {Twenty} {First} {Annual} {IEEE} {Symposium}, 2005.} {Semiconductor
+  {Thermal} {Measurement} and {Management} {IEEE} {Twenty} {First} {Annual}
+  {IEEE} {Symposium}, 2005.}\ (\BPGS\ 354--360).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Plimpton%
+}{%
+Plimpton%
+}{%
+{\protect \APACyear {1995}}%
+}]{%
+plimpton_fast_1995}
+\APACinsertmetastar {%
+plimpton_fast_1995}%
+\begin{APACrefauthors}%
+Plimpton, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1995}{{\APACmonth{03}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Fast {Parallel} {Algorithms} for {Short}-{Range}
+  {Molecular} {Dynamics}} {Fast {Parallel} {Algorithms} for {Short}-{Range}
+  {Molecular} {Dynamics}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Computational Physics}{117}{1}{1--19}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rodriguez%
+, Perez%
+\BCBL {}\ \BBA {} Lozano%
+}{%
+Rodriguez%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+rodriguez_sensitivity_2010}
+\APACinsertmetastar {%
+rodriguez_sensitivity_2010}%
+\begin{APACrefauthors}%
+Rodriguez, J\BPBI D.%
+, Perez, A.%
+\BCBL {}\ \BBA {} Lozano, J\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{{\APACmonth{03}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Sensitivity {Analysis} of k-{Fold} {Cross} {Validation}
+  in {Prediction} {Error} {Estimation}} {Sensitivity {Analysis} of k-{Fold}
+  {Cross} {Validation} in {Prediction} {Error} {Estimation}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}{32}{3}{569--575}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sasaki%
+}{%
+Sasaki%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+sasaki_truth_2007}
+\APACinsertmetastar {%
+sasaki_truth_2007}%
+\begin{APACrefauthors}%
+Sasaki, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{{\APACmonth{10}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The truth of the {F}-measure} {The truth of the
+  {F}-measure}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{}{}{}{5}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tibshirani%
+}{%
+Tibshirani%
+}{%
+{\protect \APACyear {1996}}%
+}]{%
+tibshirani_regression_1996}
+\APACinsertmetastar {%
+tibshirani_regression_1996}%
+\begin{APACrefauthors}%
+Tibshirani, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1996}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Regression {Shrinkage} and {Selection} {Via} the
+  {Lasso}} {Regression {Shrinkage} and {Selection} {Via} the {Lasso}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of the Royal Statistical Society: Series B
+  (Methodological)}{58}{1}{267--288}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

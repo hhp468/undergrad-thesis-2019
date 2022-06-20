@@ -1,0 +1,113 @@
+\section{Research Background}
+Choice of a cooling system is inevitable in many applications since the 
+involvement of heat transfer is important in many industries such as 
+automobiles, architecture and electronics. The cooling system plays 
+an important role in managing the system temperature, preventing the 
+operating system from being overheated, which could lead to severe 
+consequences if it is not taken seriously. Compared to the development 
+of cooling technologies, the development of the cooling medium itself is 
+often less considered. The choosing of an appropriate coolant would improve 
+the performance as well as reduce cost for building the system.
+
+Among liquid coolants, water is considered to be one of the best 
+candidates for coolants with its high heat capacity and low viscosity 
+\cite{mohapatra_advances_2005}. However, the temperature range of 
+water in the form of liquid is only from $0^\circ$C to $100^\circ$C, 
+which is a relatively small range. If the system 
+temperature gets out of the range, the expansion of ice or the evaporation 
+of vapor could cause unexpected behaviors, which can lead to the break down 
+of the entire system. 
+
+One of the ideas to overcome this problem is to create an aqueous-based 
+solution with an alcohol to expand the operational temperature range while 
+keeping the good performance in heat transfer and low viscosity. Many alcohol 
+types have been introduced for this approach, such as propylene glycol, 
+ethylene glycol, methanol or ethanol. However, their low thermal conductivity 
+as well as high viscosity become a burden for the cooling medium. Thus, the 
+finding of new alcohol in cooling is necessary. However, while there are an 
+enormous number of possibilities, the cost of conducting an experiment is not 
+neglectable, not to mention that we do not have a clear direction to research 
+towards the goal.
+
+Such problems can be overcome if we can create functions that link 
+molecular structure features to the values of desired properties such as 
+thermal conductivity and viscosity. With such a function, we can adjust any 
+structural feature to obtain corresponding property values as well as study 
+further on existing database, we can be correctly oriented to reach the 
+optimal coolant that satisfy all the desired property constraints.
+
+Such functions can be obtained with the help of computational power such 
+as molecular dynamics simulations and supervised machine learning. 
+In this work, we develop a methodology that help us get a research 
+direction as well as predict the molecular structural features of 
+next-generation alcohol coolants for future antifreeze development 
+using molecular simulation code LAMMPS for computer simulations combined 
+with supervised machine learning using the eXtreme Gradient Boosting technique.
+\section{Why use computational methods?}
+To understand why computational power is such a perfect vehicle to deliver 
+the answer for this problem, we will introduce the two computational 
+techniques and how can they bring great benefits for this type of problem.
+\subsection{Supervised machine learning method}
+Supervised machine learning is a class of advanced computing and statistical 
+techniques that maps a function of given sets of input-output. In other words, 
+if the input is information of structural features and the output is desired 
+properties, we can obtain the function that we desired as mentioned earlier. 
+This is a highlight of implementing the computational method since conducting 
+the function by analytical method would take a great amount of time and effort, 
+not to mention the difficulty. However, using supervised machine learning 
+requires a large amount of data in order to obtain accurate and acceptable 
+results. Thus, the perfect combination for machine learning is molecular 
+dynamics simulations.
+\subsection{Molecular Dynamics simulation}
+Molecular dynamics simulation is a computational system that numericalizes 
+features and behaviors of atoms and molecules. We will discuss the details 
+of molecular dynamics in the next section while here I will give some details 
+of notable advantages of molecular dynamics in relation to this problem. 
+Compared to manual experimental methods, molecular dynamics simulations 
+brings much greater benefits.\\
+Molecular dynamics simulations require information of the environment, 
+such as system volume, temperature, pressure and numerical information 
+of investigated coolants, and appropriate computational power to conduct 
+an experiment and calculate thermophysical properties. In that sense, 
+it is much safer and precise in terms of environment control as well as 
+simpler in terms of experimental setup, which saves a lot of resources.\\
+By being able to control the process to every single detail, we also can have 
+a more insight of atomic behaviors inside the system, in spite of the 
+difficulty of observing it if we conduct the experiment traditionally.\\
+Standing out from the above benefit, simulations can significantly reduce the 
+time to conduct experiments. The entire process is automated with the human 
+factor as an observer which allows the experiments to run continuously, 
+avoiding the gap that exists in traditional experiments due to human body 
+limitation, yet, without compromising the accuracy. To elevate this ability, 
+simulations also can run in parallel, which means we can conduct several 
+experiments at the same time; the number depending only on the available 
+computational power; and the accuracy is still guaranteed.\\
+Thus, we can escalate the number of experiments and get much greater amount 
+of data with much shorter time to serve the machine learning purpose.
+\newpage\section{Thesis Outline}
+The thesis is presented in the following manner:
+
+\textbf{Chapter 1 - Introduction} 
+\\Providing the background of the research, the idea 
+to tackle the problem that we want to answer as well as the reason why 
+we have that idea, an introduction about why computational methods should 
+be applied to solve this problem.
+
+\textbf{Chapter 2 - Theory} 
+\\Providing information of background knowledge that we need 
+to know in order to understand the approach that we are about to propose. 
+The background knowledge includes the Green-Kubo formulas of thermal 
+conductivity and viscosity, molecular dynamics simulations, and all the 
+relevant machine learning related techniques.
+
+\textbf{Chapter 3 - Method} 
+\\Providing information of how to operate the approach in 
+detail, including cultivating data method and data processing method.
+
+\textbf{Chapter 4 - Results and Discussion} 
+\\Providing the results of models 
+in different situations, the results from optimization process and discussion 
+about the results.
+
+\textbf{Chapter 5 - Conclusion} 
+\\Summary the entire work.

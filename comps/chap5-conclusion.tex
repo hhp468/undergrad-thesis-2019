@@ -1,0 +1,43 @@
+The introduction section showed that there are several obstacles that 
+prevent us from getting a research direction towards the next generation 
+of antifreeze. In this study, I suggested that such problems can be overcome 
+by creating a function that connects the antifreeze structural features to 
+its thermophysical properties such as thermal conductivity and viscosity. 
+The function is created by implementing a supervised machine learning method 
+called xgboost while the data used in training xgboost models is obtained 
+from Green-Kubo relation based molecular dynamics simulations of 8 types of 
+alcohol: methanol, ethanol, ethylene glycol, glycerol, 1-propanol, 2-propanol, 
+1,3-propanediol and propylene glycol. Such a function helps us to gain clues 
+for constructing the next generation of alcohol coolants while it also shows 
+us a research direction to optimize this method in the future.
+\section*{Summary of Findings}
+The training data is decided by 5 different ways: randomly divided, 
+excluding methanol, excluding 2-propanol, excluding glycerol and excluding 
+propylene glycol. The results showed that the models can predict values that 
+have similar patterns to training data, while they had difficulty predicting 
+properties that were very different to the training data. Thus, to overcome 
+this problem in the future, there are 2 different approaches: diversification 
+of the training data and conducting of research on special alcohol types such 
+as methanol.\\
+The machine learning approach can also statistically show that besides factors 
+such as the concentration and number of hydroxyl groups, the hydroxyl group at 
+the 3rd carbon position in the main carbon chain can significantly affect the 
+thermal conductivity values. Similarly, the hydroxyl group at the 2nd carbon 
+position in the main carbon chain has a significant influence on the viscosity 
+values.\\
+For the given alcohol sample excluding methanol, the optimization predicted 
+that the next alcohol antifreeze candidate would possess 3 to 4 carbons, 3 
+oxygens, 13 or 17 single bonds, a main carbon chain of length 3 and have 
+hydroxyl groups in every position. However, the concentration showed that 
+the mixture is almost water, which makes sense since we are only considering 
+the thermal conductivity and viscosity. Furthermore, one of molecular 
+structures that can be constructed from the predicted structural features is 
+glycerol, the type of alcohol that has the highest thermal conductivity and 
+fairly low viscosity across mass concentration of alcohol-water mixtures 
+according to simulated data. Thus, the results show that the optimization 
+algorithm approaches the problem in an appropriate manner. With the addition 
+of freezing point in the future, the methodology will be able to produce 
+desired outputs. 
+Furthermore, the prediction is likely to be further improved with a more 
+diverse sample data. An interpreting method is also needed to translate the 
+obtained structural feature values to a complete final structure.

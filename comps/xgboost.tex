@@ -1,0 +1,89 @@
+eXtreme Gradient Boosting (XGBoost) method is a robust supervised machine 
+learning method that consists of different advanced statistical techniques. 
+The advanced statistical techniques help XGBoost achieve a high calculation 
+speed and accuracy. To be able to understand XGBoost for the purpose of this 
+research, the following XGBoost component techniques will be explained\\
+- Gradient boosting\\
+- Regularization object\\
+- Sub-sample \& sub-column
+\subsection{Gradient Boosting}
+The gradient boosting feature improves the accuracy of model prediction 
+ability and calculation speed. Gradient boosting consists of 2 parts: 
+boosting and gradient.
+\subsubsection*{Boosting}
+From a mathematical perspective, the boosting algorithm is similar to the 
+Lagrange Multiplier method. Given a sample data set of n elements to make 
+the XGBoost model, the mission of boosting is to minimize the loss function
+$\sum_{i=1}^{n} l\left(y_{i}, \hat{y_{i}}\right)$, 
+which is the total sum of differences between predicted values and actual 
+values, so that the predicted outcomes are closest to the actual values. 
+The boosting algorithm also involves creation of multiple sub-functions from 
+given variables which serve as constraints for the Lagrange problem. Finally, 
+boosting algorithm takes an adjustable coefficient as the Lagrange Multiplier 
+coefficients. Instead of having many coefficients as is typically used in the 
+Lagrange multiplier method, boosting only uses a unified coefficient to avoid 
+unnecessary complexity for the system while it does not have to compromise too 
+much on accuracy. The boosting algorithm can be represented by the following 
+expression, where $\hat{f}_b(x)$ represents each sub-function that boosting creates and 
+$\lambda$ represents the Lagrange coefficient:
+\begin{equation}
+    0 \leftarrow \sum_{b=1}^{B} \sum_{i=1}^{n} l\left(r_{i}, \hat{r}_{i}\right)_{b}+\sum_{b=1}^{B} \lambda \hat{f}_{b}(x)
+\end{equation}
+Which can be written as:
+\begin{equation}
+    0\leftarrow \sum_{i=1}^{n} l\left(y_{i}, \hat{y}_{i}\right)+\sum_{b=1}^{B} \lambda \hat{f}_{b}(x)
+\end{equation}
+Furthermore, B is the total number of sub-functions, n is the number of data 
+in the sample data and r is the difference between actual values and predicted 
+values of the previous sub-function. For example, for any data point i in the 
+data sample being processed by sub-function b:
+$r_{i}^{b}=y_i^{(b-1)}-\hat{y}_i^{(b-1)}$. 
+Initially, $r_{i}^{0}=y_i$ \cite{james_introduction_2013}.
+\subsubsection*{Gradient}
+Instead of $\sum_{i=1}^{n} l\left(y_{i}, \hat{y_{i}}\right)$, the loss function
+is expanded by the Taylor expansion to the second degree, which is where the terms 
+“gradient” comes from. Thus, at any $t^{th}$ sub-function, the loss function becomes:
+\begin{equation}
+    \sum_{i}^{n_{t}}\left[l\left(r_{i}, \hat{r}_{i}^{(t-1)}+\hat{f}_t\left(x_{i}\right)\right)]\right.
+\end{equation}
+\begin{equation}
+    \sum_{i=1}^{n_t}\left[l\left(r_{i}, \hat{r}^{(t-1)}\right)+g_{i} \hat{f}_t\left(\mathbf{x}_{i}\right)+\frac{1}{2} h_{i} {\hat{f}_{t}^{2}}\left(\mathbf{x}_{i}\right)\right]
+\end{equation}
+Where $g_{i}=\partial_{\hat{r}^{(t-1)}} l\left(r_{i}, \hat{r}^{(t-1)}\right)$ and
+$h_i=\partial_{\hat{r}^{(t-1)}}^{2} l\left(r_{i}, \hat{r}^{(t-1)}\right)$ are 
+the Taylor expansion coefficients. By expanding into 2nd degree of Taylor expansion, 
+the loss function will converge faster and more accurately while avoiding 
+overfitting \cite{chen_xgboost:_2016}.\\
+Overfitting refers to the performance of a model that is particularly good for a specific set 
+of data and consequently may not be able to produce reliable predictions. 
+\subsection{Regularization Object}
+Regularization is a technique that identifies unnecessary or less important 
+variables by shrinking the coefficient of all variables (the coefficients 
+inside the sub-functions, which are different from the Lagrange coefficient) 
+towards zero. The coefficients of unnecessary or less important variables will 
+become zero, thus, do not affect the model \cite{james_introduction_2013}. To control 
+the regularization process, the XGBoost method has 2 parameters, the LASSO 
+parameter \cite{tibshirani_regression_1996} and the Ridge Regression parameter \cite{hoerl_ridge_1970}.
+\subsection{Subsample \& Subcolumn}
+Machine learning techniques normally use a set of sample data (training data) 
+to create the component functions. However, using the entire training data set 
+often encounters overfitting problems. Thus, XGBoost introduces sub-sample and sub-column features.
+
+Sub-sample is a technique that instead of using the entire training data set, 
+the algorithm only uses a portion of it.
+Sub-column is similar to sub-sample but instead of using a part of training data, 
+the algorithm uses a subset of the available variables.
+Thus, for each sub-function, a different set of sub-sample and sub-column will 
+be implemented. By doing so, the algorithm can prevent overfitting and detect 
+the relationship between variables and outcomes even further and use of 
+sub-columns also increase the computing speed \cite{chen_xgboost:_2016}.
+
+Corresponding to the explained theory, XGBoost has the following parameters 
+that need to be chosen:\\
+- n\_estimators = number of sub-functions B\\
+- learning\_rate = the Lagrange coefficient $\lambda$\\
+- subsample = sub-sample size\\
+- colsample\_bytree = sub-column size\\
+- reg\_alpha = the LASSO parameter\\
+- reg\_lambda = the Ridge Regression parameter
+
